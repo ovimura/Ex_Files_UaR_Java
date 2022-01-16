@@ -16,7 +16,10 @@ public class FortuneTeller {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        File inputFile = new File("answers.txt");
+        //String cDir = System.getProperty("user.dir");
+        //System.out.println(cDir);
+        //System.exit(9);
+        File inputFile = new File("c:/repos/Ex_Files_UaR_Java/Exercise Files/06_01/FortuneTeller/answers.txt");
         ArrayList<String> answers = new ArrayList<String>();
         String answer, response = "y";
         Random rand = new Random();
@@ -32,6 +35,7 @@ public class FortuneTeller {
         {
             System.out.println("The input file \"answers.txt\" was not found.");
             System.out.println(e.toString());
+            System.exit(0);
         }
         Scanner in = new Scanner(System.in);
         while(response.equalsIgnoreCase("y"))
@@ -44,7 +48,6 @@ public class FortuneTeller {
                 answers.get(rand.nextInt(answers.size()))+"\"\n");
         System.out.println("Do you have another question? (y/n)");
         response = in.nextLine();        
-        }        
+        }
     }
-    
 }
