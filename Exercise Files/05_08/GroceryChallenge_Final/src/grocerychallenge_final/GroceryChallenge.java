@@ -48,7 +48,7 @@ public class GroceryChallenge {
             newItem = in.nextLine();
             found=false;
         }
-         System.out.println("\nHere is the final list: \n" + 
+        System.out.println("\nHere is the final list: \n" +
                 groceries.toString());
     }
     
