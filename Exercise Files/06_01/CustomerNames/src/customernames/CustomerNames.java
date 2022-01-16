@@ -16,7 +16,7 @@ public class CustomerNames {
      */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        File output = new File("customers.txt");
+        File output = new File("c:/repos/Ex_Files_UaR_Java/Exercise Files/06_01/CustomerNames/src/customernames/customers.txt");
         String name;
         System.out.println("Enter the first customer name: ");
         name = in.nextLine();
